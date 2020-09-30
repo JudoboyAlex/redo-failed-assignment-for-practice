@@ -1,0 +1,18 @@
+.container{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+/* .contents p{
+    margin:0;
+} */
+
+img{
+    width: 10rem;
+    height: 10rem;
+}
+
+li{
+    list-style: none;
+}

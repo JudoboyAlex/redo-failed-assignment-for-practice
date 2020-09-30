@@ -18,8 +18,7 @@ function App() {
 
   return (
     <div>
-      <h1>Let's Do This!</h1>
-      {studentData.map((student, index) => (
+      {studentData.map((student) => (
         <div>
           <Students
           key= {student.id}
