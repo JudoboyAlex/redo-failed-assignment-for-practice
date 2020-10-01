@@ -16,3 +16,7 @@ img{
 li{
     list-style: none;
 }
+
+form{
+    text-align: center;
+}

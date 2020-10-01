@@ -3,22 +3,31 @@ import "./Students.css";
 
 const Students = ({ company, email, picture, grades, skill, firstName, lastName })=>{
 
-    console.log(grades)
     const gradesAverage= grades.map(Number).reduce((a,b) => a+b) / grades.length;
-    const fullName = firstName.toUpperCase() + " " + lastName.toUpperCase();
 
     return(
         <div className="container">       
                 <img src={picture}></img>
                 <div className="contents">
-                    <p>{fullName}</p>
+                    <p>{firstName.toUpperCase()} {lastName.toUpperCase()}</p>
                     <p>Company: {company}</p>
                     <p>Email: {email}</p>
                     <p>Skill: {skill}</p>
                     <p>Average: {gradesAverage}%</p>
                     <p>{grades.map((grade,index) => <li>Test {index + 1}: {grade}</li>)}</p>
+                    <form>
+                    <input
+                    // value={}
+                    // onChange={}
+                    type="text"
+                    placeholder="Add Tag" />
+                    </form>
                 </div>
         </div>
+       
+
+        
+    
     )
 }
 
